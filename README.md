@@ -3,7 +3,7 @@
 ### Docker 環境の構築
 
 ```
-docker-compose build
+docker-compose build # 初回のみ
 docker-compose up -d
 ```
 
