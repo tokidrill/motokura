@@ -5,6 +5,9 @@ import random
 import re
 
 def index(request):
+    return render(request, "app/index.html", context=None)
+
+def run3(request):
     text = """
     ハヤブサをおもいうかべてください。そらをかけぬけて、かぜをうけ、それでもやはりそらをきりさくハヤブサです。ものすごいかいかんでしょう。ぼくはいま、ハヤブサになっています。あなたがしんじようがしんじまいが、ぼくにはどうでもいい。あるのはぼくがハヤブサになったということだけです。
 
@@ -146,4 +149,4 @@ def index(request):
         "termFive": termFive,
     }
 
-    return render(request, "app/index.html", context)
+    return render(request, "app/index.html", context=context)
