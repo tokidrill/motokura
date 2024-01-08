@@ -13,7 +13,7 @@ docker-compose up -d
 docker-compose exec django bash
 cd noveltotanka
 
-python manage.py runserver 0.0.0.0:8080
+python manage.py runserver 0.0.0.0:8000
 
 http://localhost:8080
 ```
