@@ -1,12 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 import random
 import re
 
 def index(request):
-
-# from pykakasi import kakasi
-
     text = """
     ハヤブサをおもいうかべてください。そらをかけぬけて、かぜをうけ、それでもやはりそらをきりさくハヤブサです。ものすごいかいかんでしょう。ぼくはいま、ハヤブサになっています。あなたがしんじようがしんじまいが、ぼくにはどうでもいい。あるのはぼくがハヤブサになったということだけです。
 
@@ -140,4 +138,12 @@ def index(request):
     print(termFour)
     print(termFive)
 
-    return HttpResponse(termOne + "\n" + termTwo + "\n" + termThree + "\n" + termFour + "\n" + termFive)
+    context = {
+        "termOne": termOne,
+        "termTwo": termTwo,
+        "termThree": termThree,
+        "termFour": termFour,
+        "termFive": termFive,
+    }
+
+    return render(request, "app/index.html", context)
