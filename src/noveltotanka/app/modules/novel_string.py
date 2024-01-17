@@ -145,3 +145,25 @@ def hayabusa():
     すべてがやみにのみこまれていくようです。
     あのひとは、そしてぼくは、どこへ……。
     """
+
+def hayabusa_word():
+    words = hayabusa_word_list()
+    return random.choice(words)
+
+def hayabusa_words():
+    words = hayabusa_word_list()
+    return random.choices(words, k=9)
+
+def hayabusa_word_list():
+    return [
+        'きんいろ',
+        'ハヤブサ',
+        'トンネル',
+        'あそび',
+        'ぼく',
+        'そら',
+        'かぜ',
+        'すごい',
+        'あなた',
+        'きみ',
+    ]
