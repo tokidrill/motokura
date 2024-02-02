@@ -2,7 +2,7 @@ import re
 import random
 
 def remove_symbols(novel_text) :
-    trimmed_text = novel_text.replace("、", "").replace("。", "").replace("「", "").replace("」", "").replace("\n", "").replace(" ", "").replace("？", "").replace("?", "").replace("　", "").replace("…", "").replace("!", "").replace("！", "")
+    trimmed_text = novel_text.replace("、", "").replace("。", "").replace("「", "").replace("」", "").replace("\n", "").replace(" ", "").replace("？", "").replace("?", "").replace("　", "").replace("…", "").replace("!", "").replace("！", "").replace("—", "")
     return trimmed_text
 
 def search_keyword(string, text):
@@ -152,7 +152,7 @@ def hayabusa_word():
 
 def hayabusa_words():
     words = hayabusa_word_list()
-    return random.choices(words, k=9)
+    return random.sample(words, 9)
 
 def hayabusa_word_list():
     return [
