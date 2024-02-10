@@ -7,7 +7,6 @@ from pathlib import Path
 import random
 import re
 import os
-import cv2
 
 def search_keyword(string, text):
     hitted = re.finditer(string, text)
@@ -60,7 +59,7 @@ def run2(request):
 
     context = novel_string.split_five_seven_five(tankaText)
 
-    return render(request, "app/index.html", context=context)
+    return render(request, "app/result.html", context=context)
 
 def run3(request):
     novel_text = novel_string.hayabusa()
@@ -78,7 +77,7 @@ def run3(request):
 
     context = novel_string.split_five_seven_five(tankaText)
 
-    return render(request, "app/index.html", context=context)
+    return render(request, "app/result.html", context=context)
 
 def run4(request):
     word = request.POST.get('word')
@@ -92,7 +91,7 @@ def run4(request):
 
     context = novel_string.split_five_seven_five(tankaText)
 
-    return render(request, "app/index.html", context=context)
+    return render(request, "app/result.html", context=context)
 
 def hiragana(request):
     form = WordForm()

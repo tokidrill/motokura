@@ -1,4 +1,19 @@
-<form action="run4" method="post">
+{% load static %}
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>松下元昧</title>
+  <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
+</head>
+
+<form action="run4" method="post" class="hiragana1_form">
   {% csrf_token %}
-  <input type="submit" name="word" value="{{ word }}" required id="word" />
+  <div class="hiragana2_composition0">
+    2
+  </div>
+  <div class="hiragana1_composition">
+    <input type="submit" name="word" value="{{ word }}" required id="word" class="one_choice"/>
+  </div>
+
 </form>
