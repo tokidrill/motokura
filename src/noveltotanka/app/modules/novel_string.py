@@ -28,6 +28,20 @@ def pick_text_by_keyword(string, text) :
 
     return tankaText
 
+def pick_text_by_keyword2(string, text) :
+    picked = search_keyword(string, text)
+    start = picked.start()
+    end = picked.end()
+
+    tankaText = text[start:start+31]
+
+    semitoneStr = 'ぁ|ぃ|ぅ|ぇ|ぉ|ゃ|ゅ|ょ|ァ|ィ|ゥ|ェ|ォ|ャ|ュ|ョ'
+    semitoneCount = len(re.findall(semitoneStr, tankaText))
+
+    tankaText = text[start:start+31+semitoneCount]
+
+    return tankaText
+
 def split_five_seven_five(tankaText):
     semitoneStr = "ぁ|ぃ|ぅ|ぇ|ぉ|ゃ|ゅ|ょ|ァ|ィ|ゥ|ェ|ォ|ャ|ュ|ョ"
 

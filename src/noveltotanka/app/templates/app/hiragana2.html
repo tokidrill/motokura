@@ -1,12 +1,31 @@
-<form action="run2" method="post">
+{% load static %}
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>松下元昧</title>
+  <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
+</head>
+
+<form action="run2" method="post" class="hiragana2_form">
   {% csrf_token %}
-  <input type="submit" name="word" value="{{ words.0 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.1 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.2 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.3 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.4 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.5 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.6 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.7 }}" required id="word" />
-  <input type="submit" name="word" value="{{ words.8 }}" required id="word" />
+  <div class="hiragana2_composition0">
+    1
+  </div>
+  <div class="hiragana2_composition1">
+    <input type="submit" name="word" value="{{ words.0 }}" required id="word" class="choice1" />
+    <input type="submit" name="word" value="{{ words.1 }}" required id="word" class="choice1"/>
+    <input type="submit" name="word" value="{{ words.2 }}" required id="word" class="choice1"/>
+  </div>
+  <div class="hiragana2_composition2">
+    <input type="submit" name="word" value="{{ words.3 }}" required id="word" class="choice2"/>
+    <input type="submit" name="word" value="{{ words.4 }}" required id="word" class="choice2"/>
+    <input type="submit" name="word" value="{{ words.5 }}" required id="word" class="choice2"/>
+  </div>
+  <div class="hiragana2_composition3">
+    <input type="submit" name="word" value="{{ words.6 }}" required id="word" class="choice3"/>
+    <input type="submit" name="word" value="{{ words.7 }}" required id="word" class="choice3"/>
+    <input type="submit" name="word" value="{{ words.8 }}" required id="word" class="choice3"/>
+  </div>
+ 
 </form>

@@ -56,7 +56,7 @@ def run2(request):
 
     string = word
 
-    tankaText = novel_string.pick_text_by_keyword(string, trimmed)
+    tankaText = novel_string.pick_text_by_keyword2(string, trimmed)
 
     context = novel_string.split_five_seven_five(tankaText)
 
@@ -75,6 +75,20 @@ def run3(request):
     semitoneCount = len(re.findall(semitoneStr, tankaText))
 
     tankaText = trimmed_text[randomNumber:randomNumber+31+semitoneCount]
+
+    context = novel_string.split_five_seven_five(tankaText)
+
+    return render(request, "app/index.html", context=context)
+
+def run4(request):
+    word = request.POST.get('word')
+
+    novel_text = novel_string.hayabusa()
+    trimmed = novel_string.remove_symbols(novel_text)
+
+    string = word
+
+    tankaText = novel_string.pick_text_by_keyword(string, trimmed)
 
     context = novel_string.split_five_seven_five(tankaText)
 
