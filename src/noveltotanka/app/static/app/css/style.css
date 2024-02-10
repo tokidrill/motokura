@@ -1,0 +1,21 @@
+body {
+    color: blue;
+}
+
+#title {
+    color: red;
+}
+
+.sentence {
+    color: yellow;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.button1 {
+    width: 10em;
+    height:3em;
+}

@@ -2,9 +2,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from app.modules import novel_string
 from app.forms import WordForm
+from pathlib import Path
 
 import random
 import re
+import os
+import cv2
 
 def search_keyword(string, text):
     hitted = re.finditer(string, text)
@@ -15,6 +18,13 @@ def search_keyword(string, text):
     return result[0]
 
 def index(request):
+    # BASE_DIR = Path(__file__).resolve().parent.parent
+
+    # img = cv2.imread(os.path.join(BASE_DIR, "static/app/img/sample.jpg"),0)
+    # img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # cv2.imwrite(output_path, img_gray)
+    # print(img)
+
     return render(request, "app/index.html", context=None)
 
 def run1(request):
