@@ -4,8 +4,11 @@ body {
 
 #title {
     color: orange;
+    width: 100%;
+    font-size: 10px;
+    /* background-color: gray; */
+    text-align: center;
 }
-
 
 
 a {
@@ -18,8 +21,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: gray;
-    width: 75%;
+    /* background-color: gray; */
+    width: 100%;
+    margin-top: 15em;
 }
 
 .button1 {
@@ -130,10 +134,12 @@ a {
 }
 
 .title {
-    width: 10em;
-    height: 1em;
+    width: 100%;
+    /* height: 1em; */
     color: rgb(230, 157, 12);
-    background-color: aquamarine;
+    font-size: 4px;
+    text-align: center;
+    /* background-color: aquamarine; */
 }
 
 .box {
