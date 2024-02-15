@@ -114,3 +114,28 @@ def hiragana2(request):
     }
 
     return render(request, "app/hiragana2.html", context=context)
+
+# import json
+
+def runx(request):
+    # text = novel_string.kissaten()
+    # # keyword = ["テーブル", "鞄", "喫茶店", "固定", "危", "移動", "香水"]
+    # # color = ["#" + "".join([random.choice("0123456789ABCDEF") for j in range(6)])]
+    # # print_hl(text, keyword, color)
+    # context = json.loads(text)
+
+    return render(request, "app/runx1.html")
+
+# class pycolor:
+# def print_hl(text, keyword, color):
+#     for kw in keyword:
+#         bef = kw
+#         aft = color + kw + color["end"]
+#         text = re.sub(bef, aft, text)
+#     print(text)
+
+def runx2(request):
+    return render(request, "app/runx2.html")
+
+def runx3(request):
+    return render(request, "app/runx3.html")
