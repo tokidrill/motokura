@@ -62,6 +62,13 @@ def run2(request):
     return render(request, "app/result.html", context=context)
 
 def run3(request):
+    click_count = request.POST.get('click_count')
+    if click_count == None:
+        click_count = 0
+    else:
+        click_count = int(click_count)
+    print(click_count)
+
     novel_text = novel_string.hayabusa()
     trimmed_text = novel_string.remove_symbols(novel_text)
 
@@ -76,6 +83,8 @@ def run3(request):
     tankaText = trimmed_text[randomNumber:randomNumber+31+semitoneCount]
 
     context = novel_string.split_five_seven_five(tankaText)
+
+    context['click_count'] = click_count + 1
 
     return render(request, "app/result.html", context=context)
 

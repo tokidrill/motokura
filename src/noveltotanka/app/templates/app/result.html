@@ -24,19 +24,20 @@
             <!-- <a href="/app/hiragana">2</a> -->
             2
         </button>
-        <button class="button3" onclick="location.href='/app/run3'">
-            <!-- <a href="/app/run3">3</a> -->
+        <form action="run3" method="post">
+          <button type="submit" class="button3" name="click_count" value="{{ click_count }}">
             3
-        </button>
+          </button>
+        </form>
     </div>
 
-    <div class="container3">
-        <button class="button4" onclick="location.href='/app/runx'">
-            <!-- <a href="/app/run3">3</a> -->
-            4
-        </button>
-    </div>
-
+    {% if click_count >= 3 %}
+      <div class="container3">
+          <button class="button4" onclick="location.href='/app/runx'">
+              4
+          </button>
+      </div>
+    {% endif %}
 
   </body>
 </html>
