@@ -31,7 +31,8 @@ a {
     height: 15em;
     text-align: center;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 
@@ -44,7 +45,8 @@ a {
     height: 10em;  
     text-align: center;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 .button3 {
@@ -52,7 +54,8 @@ a {
     height: 5em;
     text-align: center;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 .container3 {
@@ -79,7 +82,8 @@ a {
     margin-left: 0.6em;
     margin-right: 0.6em;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 .choice2 {
@@ -88,7 +92,8 @@ a {
     margin-left: 0.6em;
     margin-right: 0.6em;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 .choice3 {
@@ -97,7 +102,8 @@ a {
     margin-left: 0.6em;
     margin-right: 0.6em;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 
@@ -161,7 +167,8 @@ a {
     width: 20em;
     height: 7em;
     -webkit-appearance: none;
-    background-color: rgb(208, 208, 208)
+    background-color: aliceblue;
+    color: black;
 }
 
 .title {
