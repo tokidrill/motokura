@@ -43,7 +43,7 @@ a {
     text-align: center;
 }
 
-#button3 {
+.button3 {
     width: 5em;
     height: 5em;
     text-align: center;
@@ -58,7 +58,7 @@ a {
     margin-top: 5em;
 }
 
-#button4 {
+.button4 {
     width: 15em;
     height: 5em;
     text-align: center;
