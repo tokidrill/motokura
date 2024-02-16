@@ -42,11 +42,12 @@ a {
     width: 10em;
     height: 10em;  
     text-align: center;
+    -webkit-appearance: none;
 }
 
 .button3 {
     width: 5em;
-    height: 2em;
+    height: 5em;
     text-align: center;
     -webkit-appearance: none;
 }
@@ -183,6 +184,7 @@ a {
     /* background-color: gray; */
     width: 100%;
     margin-top: 3em;
+    -webkit-appearance: none;
 }
 
 .nextpage {
