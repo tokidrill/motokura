@@ -63,11 +63,14 @@ def run2(request):
 
 def run3(request):
     click_count = request.POST.get('click_count')
+
     if click_count == None:
         click_count = 0
     else:
-        click_count = int(click_count)
-    print(click_count)
+        try:
+            click_count = int(click_count)
+        except ValueError:
+            click_count = 0
 
     novel_text = novel_string.hayabusa()
     trimmed_text = novel_string.remove_symbols(novel_text)
