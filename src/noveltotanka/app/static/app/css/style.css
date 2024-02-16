@@ -30,6 +30,7 @@ a {
     width: 15em;
     height: 15em;
     text-align: center;
+    -webkit-appearance: none;
 }
 
 
@@ -47,6 +48,7 @@ a {
     width: 5em;
     height: 5em;
     text-align: center;
+    -webkit-appearance: none;
 }
 
 .container3 {
