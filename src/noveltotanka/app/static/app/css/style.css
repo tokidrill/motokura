@@ -75,6 +75,7 @@ a {
     height: 6em;
     margin-left: 0.6em;
     margin-right: 0.6em;
+    -webkit-appearance: none;
 }
 
 .choice2 {
@@ -189,7 +190,7 @@ a {
 }
 
 .nextpage {
-    background-color: rgb(30, 0, 255);
+    background-color: rgb(255, 149, 0);
     margin-top: 10em;
 }
 
@@ -227,6 +228,3 @@ a {
     height: 100%;
 }
 
-.form input[type="submit"] {
-    -webkit-appearance: none;
-}
