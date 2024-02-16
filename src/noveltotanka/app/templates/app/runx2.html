@@ -5,19 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>松下元昧</title>
   <link href="{% static 'app/css/style.css' %}" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<div class="cafe_background">
-    <div>
-        <p> 私は店員に目配せをしたり、コーヒーを注文したりする間も含めてこの店に入ってからというものずっと、あることを思っていた。<span class="table">テーブル</span>や家具が<span class="static">固定</span>されていないということが、重要なこととして、常に心の中で、手前に位置しているのだ。
-            これには理由があった。目の前の<span class="bag">鞄</span>につけられたキーホルダーが売られているような、遊園地の中にあるレストランでは、まさにどの<span class="table">テーブル</span>も、床にボルトで堅く<span class="static">固定</span>されていること。そして、そうした場所に私と彼女がつい昨日まで居たということがおそらくその理由であった。つまるところ、ここでは——この<span class="cafe">喫茶店</span>では、私は<span class="table">テーブル</span>やソファーや本棚を容易に、元にあった場所から遠ざけてしまうことができた。しかし、遊園地との対比の中で私は《前もって》あることに気がついていたのだ。この<span class="cafe">喫茶店</span>よりも、遊園地のなかのレストランの方が、よっぽど<span class="danger">危</span>うく脆いものであると。
-        </p>
+<body>
+    <div class="cafe_background">
+        <div>
+            <p> 私は店員に目配せをしたり、コーヒーを注文したりする間も含めてこの店に入ってからというものずっと、あることを思っていた。<span id="table">テーブル</span>や家具が<span id="static">固定</span>されていないということが、重要なこととして、常に心の中で、手前に位置しているのだ。
+                これには理由があった。目の前の<span id="bag1">鞄</span>につけられたキーホルダーが売られているような、遊園地の中にあるレストランでは、まさにどの<span id="table2">テーブル</span>も、床にボルトで堅く<span id="static2">固定</span>されていること。そして、そうした場所に私と彼女がつい昨日まで居たということがおそらくその理由であった。つまるところ、ここでは——この<span id="cafe">喫茶店</span>では、私は<span id="table3">テーブル</span>やソファーや本棚を容易に、元にあった場所から遠ざけてしまうことができた。しかし、遊園地との対比の中で私は《前もって》あることに気がついていたのだ。この<span id="cafe2">喫茶店</span>よりも、遊園地のなかのレストランの方が、よっぽど<span id="danger">危</span>うく脆いものであると。
+            </p>
+        </div>
+        
+        <div>
+            <button class="nextpage" onclick="location.href='/app/runx3'">
+                次のページ
+            </button>
+        </div>
     </div>
-    
-    <div>
-        <button class="nextpage" onclick="location.href='/app/runx3'">
-            次のページ
-        </button>
-    </div>
-</div>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = 'テーブル';
+            const textElement = $('#table');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = 'テーブル';
+            const textElement = $('#table2');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = 'テーブル';
+            const textElement = $('#table3');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '固定';
+            const textElement = $('#static');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '固定';
+            const textElement = $('#static2');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '喫茶店';
+            const textElement = $('#cafe');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '喫茶店';
+            const textElement = $('#cafe2');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '鞄';
+            const textElement = $('#bag1');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '鞄';
+            const textElement = $('#bag2');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            const wordToChange = '危';
+            const textElement = $('#danger');
+            const originalText = textElement.text();
+            const coloredText = originalText.replace(new RegExp(wordToChange, 'g'), function(match) {
+                const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+                return `<span style="color:${color};">${match}</span>`;
+            });
+            textElement.html(coloredText);
+        });
+    </script>
+</body>
+
+
 
