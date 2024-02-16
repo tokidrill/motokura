@@ -151,6 +151,7 @@ a {
 .one_choice {
     width: 20em;
     height: 7em;
+    -webkit-appearance: none;
 }
 
 .title {
