@@ -31,6 +31,7 @@ a {
     height: 15em;
     text-align: center;
     -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 
@@ -43,6 +44,7 @@ a {
     height: 10em;  
     text-align: center;
     -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 .button3 {
@@ -50,6 +52,7 @@ a {
     height: 5em;
     text-align: center;
     -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 .container3 {
@@ -76,6 +79,7 @@ a {
     margin-left: 0.6em;
     margin-right: 0.6em;
     -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 .choice2 {
@@ -83,6 +87,8 @@ a {
     height: 6em;
     margin-left: 0.6em;
     margin-right: 0.6em;
+    -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 .choice3 {
@@ -90,6 +96,8 @@ a {
     height: 6em;
     margin-left: 0.6em;
     margin-right: 0.6em;
+    -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 
@@ -153,6 +161,7 @@ a {
     width: 20em;
     height: 7em;
     -webkit-appearance: none;
+    background-color: rgb(208, 208, 208)
 }
 
 .title {
